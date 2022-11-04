@@ -1,0 +1,150 @@
+
+/*
+write a program to create online food order system
+ */
+package pk;
+import java.util.Scanner;
+public class DO_while_demo11 
+{
+
+	public static void main(String args[]) 
+	{
+		// TODO Auto-generated method stub
+		food();
+	}
+	public static void food()
+	{
+	System.out.println("Welcome to anudeep hotel");
+	int choice;
+	char ans;
+	Scanner sc=new Scanner(System.in);
+	int Choice;
+	do {
+	   Choice= sc.nextInt();
+	    String runningTotal;
+		int foodItem;
+		switch(choice){
+	      case 1:
+	        foodItem = 1;
+	        runningTotal += itemPrice(foodItem);
+	        break;
+	      case 2:
+	        foodItem = 2;
+	        runningTotal += itemPrice(foodItem);
+	        break;
+	      case 3:
+	        foodItem = 3;
+	        runningTotal += itemPrice(foodItem);
+	        break;
+	      case 4:
+	        done(runningTotal);
+	        break;
+	      default:
+	System.out.println("Do you want to continue this process y/n");
+	ans=sc.next().charAt(0);
+	}
+	while(ans=='y' ||ans=='Y');
+
+	System.out.println("Thanks for coming :)");
+	
+	boolean ordering;
+	while(ordering);
+	
+	  System.out.println("Total amount: " + runningTotal); 
+	}
+	
+	private static void done(String runningTotal) {
+		// TODO Auto-generated method stub
+		
+	}
+	private static String itemPrice(int foodItem) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}
+
+
+----------------------
+
+/* Write a program to display the following pattern
+ 
+    *         	
+   ***		
+  *****		
+ *******		
+*********
+
+ */
+
+package pk;
+
+public class star_up_pattern
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		int rows = 5, k = 0;
+
+	    for (int i = 1; i <= rows; ++i, k = 0) {
+	      for (int space = 1; space <= rows - i; ++space) {
+	        System.out.print("  ");
+	      }
+
+	      while (k != 2 * i - 1) {
+	        System.out.print("* "); 
+	        ++k;
+	      }
+
+	      System.out.println();
+	    }
+	}
+}
+
+	
+--------------
+
+
+/*Write a program to display the following pattern
+
+
+*********
+ *******
+  *****
+   ***
+    *
+   
+   */
+
+package pk;
+
+public class star_down_pattern 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		for(int i=5;i>=1;i--)
+		{
+			for(int j=5;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			for (int j=1;j<=(2*i-1);j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+}
+-----------------
+-----------------
+/*
+ /*Write a program to display the following pattern
+A
